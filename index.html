@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8"> <!-- Definindo a codificação do documento -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configurando a viewport para dispositivos móveis -->
+  <title>Formulário com Bootstrap</title> <!-- Título da página -->
+  <!-- Inserindo o CSS do Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Estilo personalizado */
+    .form-container {
+      padding: 20px; /* Adiciona um espaçamento interno de 20px */
+      background-color: #f8f9fa; /* Define a cor de fundo do formulário */
+      border-radius: 5px; /* Adiciona bordas arredondadas */
+    }
+  </style>
+</head>
+<body>
+
+<div class="container mt-5"> <!-- Define um espaçamento do topo de 5 unidades -->
+  <div class="row justify-content-center"> <!-- Centraliza o conteúdo na linha -->
+    <div class="col-md-6"> <!-- Define a largura da coluna para dispositivos médios -->
+      <!-- Adicionando classe 'form-container' para aplicar o estilo personalizado -->
+      <form class="form-container">
+        <!-- Campo para nome -->
+        <div class="form-group">
+          <label for="inputNome">Nome:</label>
+          <input type="text" class="form-control" id="inputNome" placeholder="Seu nome completo">
+        </div>
+        <!-- Campo para e-mail -->
+        <div class="form-group">
+          <label for="inputEmail">Email:</label>
+          <input type="email" class="form-control" id="inputEmail" placeholder="Digite seu email">
+        </div>
+        <!-- Campo para senha -->
+        <div class="form-group">
+          <label for="inputSenha">Senha:</label>
+          <input type="password" class="form-control" id="inputSenha" placeholder="Digite sua senha">
+        </div>
+        <!-- Botão de envio -->
+        <button type="submit" class="btn btn-primary btn-block">Enviar</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
